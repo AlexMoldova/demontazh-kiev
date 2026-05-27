@@ -60,8 +60,10 @@
 */
 
 *{margin:0;padding:0;box-sizing:border-box;-webkit-font-smoothing:antialiased}
-html{scroll-behavior:smooth;cursor:none}
-@media (hover:none){html{cursor:auto}}
+html{
+  overflow-x:hidden;scroll-behavior:smooth;cursor:none}
+@media (hover:none){html{
+  overflow-x:hidden;cursor:auto}}
 body{
   background:var(--bg);
   color:var(--text);
@@ -1412,7 +1414,7 @@ a.contact-info-val:hover{color:var(--accent)}
   transform:translateY(-2px);
   box-shadow:0 8px 20px -6px rgba(0,0,0,.4);
 }
-.msg-btn svg{width:18px;height:18px;flex-shrink:0}
+.msg-btn svg{width:20px;height:20px;flex-shrink:0}
 .msg-btn-viber{background:#7360f2}
 .msg-btn-whatsapp{background:#25d366}
 .msg-btn-telegram{background:#229ed9}
@@ -1438,7 +1440,7 @@ a.contact-info-val:hover{color:var(--accent)}
   transform:translateY(-2px);
   box-shadow:0 8px 20px -6px rgba(0,0,0,.4);
 }
-.msg-btn svg{width:18px;height:18px;flex-shrink:0}
+.msg-btn svg{width:20px;height:20px;flex-shrink:0}
 .msg-btn-viber{background:#7360f2}
 .msg-btn-whatsapp{background:#25d366}
 .msg-btn-telegram{background:#229ed9}
@@ -1608,7 +1610,7 @@ footer{
    ═══════════════════════════════════════════ */
 .float-contacts{
   position:fixed;
-  bottom:24px;right:20px;
+  bottom:24px;right:16px;
   z-index:99;
   display:flex;
   flex-direction:column;
@@ -1662,7 +1664,7 @@ footer{
   100%{box-shadow:0 12px 32px -8px rgba(0,0,0,.6), 0 0 0 0 rgba(var(--accent-glow),0)}
 }
 @media(max-width:600px){
-  .float-contacts{bottom:16px;right:14px;gap:10px}
+  .float-contacts{bottom:16px;right:12px;gap:10px}
   .float-btn{width:52px;height:52px}
   .float-btn svg{width:24px;height:24px}
   .float-btn-tooltip{display:none}
